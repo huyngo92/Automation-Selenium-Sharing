@@ -1,8 +1,8 @@
 # Automation-Selenium-Sharing
- To traning some thing new for selenium
+ To traning some thing new of selenium java
  
  ### How do I get set up?
-* Install [Amazon Coretto 11](https://aws.amazon.com/corretto/)
+* Install [JDK 11](http://jdk.java.net/)
 * Install [InteliJ IDEA Community Edition](https://www.jetbrains.com/idea/download)
 * Install [git](https://git-scm.com/downloads)
 * Clone the project from the git repo
