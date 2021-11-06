@@ -19,32 +19,10 @@ public class LoginTest {
         /* Init new Chrome Driver**/
         WebDriver driver = new ChromeDriver();
         /* Get new URL **/
-        driver.get("https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login");
-
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        driver.findElement(By.xpath("//input[@id='username']")).sendKeys("haint52");
-
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-
-        driver.findElement(By.xpath("//input[@id='username']")).sendKeys("haint522021");
-
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
+        driver.get("https://katalon-demo-cura.herokuapp.com/profile.php#login");
+        driver.findElement(By.xpath("//label[text()='Username']//parent::div//input")).sendKeys("John Doe");
+        driver.findElement(By.xpath("//label[text()='Password']//parent::div//input")).sendKeys("ThisIsNotAPassword");
+        driver.findElement(By.xpath("//button[text()='Login']")).click();
 
     }
 
